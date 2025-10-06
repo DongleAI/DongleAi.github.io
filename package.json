@@ -8,10 +8,10 @@
     "build": "vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
-
+    "deploy": "gh-pages -d dist -b master --force"
   },
   "dependencies": {
+    "@google/gemini-cli": "^0.7.0",
     "@tailwindcss/postcss": "^4.1.14",
     "@tailwindcss/vite": "^4.1.14",
     "framer-motion": "^12.23.22",
@@ -21,7 +21,9 @@
     "lucide-react": "^0.544.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "react-i18next": "^16.0.0"
+    "react-i18next": "^16.0.0",
+    "react-router-dom": "^7.9.3",
+    "recharts": "^3.2.1"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
