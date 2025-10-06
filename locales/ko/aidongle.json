@@ -1,0 +1,35 @@
+{
+  "productName": "동글",
+  "hero": {
+    "title": "동글 AI",
+    "tagline": "최고의 AI 모델",
+    "subtext": "단일 통합 플랫폼에서 전례 없는 성능, 속도 및 안정성을 경험하십시오."
+  },
+  "models": {
+    "model1": {
+      "title": "동글 프로",
+      "description": "고성능 멀티모달 모델입니다."
+    },
+    "model2": {
+      "title": "동글 플래시",
+      "description": "지연 시간이 짧은 실시간 처리 모델입니다."
+    },
+    "model3": {
+      "title": "동글 라이트",
+      "description": "에지 장치에 최적화된 경량 모델입니다."
+    }
+  },
+  "handsOn": {
+    "example1": "예제 1 제목",
+    "example1_desc": "예제 1 설명",
+    "example2": "예제 2 제목",
+    "example2_desc": "예제 2 설명"
+  },
+  "performance": {
+    "feature1": "차세대 추론",
+    "feature1_desc": "주요 산업 벤치마크에서 최첨단 결과를 달성하십시오.",
+    "feature2": "타의 추종을 불허하는 속도",
+    "feature2_desc": "실시간 애플리케이션의 대기 시간을 최소화하여 그 어느 때보다 빠르게 결과를 제공합니다.",
+    "eloScore": "ELO 점수"
+  }
+}

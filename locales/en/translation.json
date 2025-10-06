@@ -1,0 +1,387 @@
+{
+  "dongle": {
+    "safety": {
+      "title": "Safety",
+      "subtitle": "Our commitment to responsible AI"
+    },
+    "models": {
+      "title": "Models",
+      "subtitle": "Explore our models",
+      "model1": {
+        "title": "Dongle Pro",
+        "description": "The high-performance multimodal model."
+      },
+      "model2": {
+        "title": "Dongle Flash",
+        "description": "The low-latency, real-time processing model."
+      },
+      "model3": {
+        "title": "Dongle Lite",
+        "description": "The lightweight model optimized for edge devices."
+      }
+    }
+  },
+  "productName": "Dongle",
+  "nav": {
+    "models": "Models",
+    "performance": "Performance",
+    "safety": "Safety",
+    "build": "Build",
+    "showcase": "Showcase",
+    "science": "Science",
+    "about": "About"
+  },
+  "lang": {
+    "ko": "Korean",
+    "en": "English"
+  },
+  "cta": {
+    "chat": "Chat with Dongle",
+    "buildApi": "Build with Dongle",
+    "getStarted": "Get Started",
+    "viewDocs": "View Docs",
+    "tryDemo": "Try Demo",
+    "viewReport": "View Full Report",
+    "readReport": "Read Safety Report",
+    "learnMore": "Learn more",
+    "getApiKey": "Get API Key",
+    "explorePartners": "Explore Partners",
+    "startBuilding": "Start building"
+  },
+  "hero": {
+    "tagline": "Our best AI models",
+    "subtext": "Experience unprecedented power, speed, and reliability in a single, unified platform."
+  },
+  "section": {
+    "coreModels": {
+      "title": "Our Core Models",
+      "subtitle": "Explore our lineup of models optimized for various purposes."
+    },
+    "handsOn": {
+      "title": "Experience It Live",
+      "subtitle": "See the powerful performance and flexibility of our product through real-world examples."
+    },
+    "performance": {
+      "title": "Performance Benchmarks",
+      "subtitle": "Experience superior benchmark performance compared to competitors."
+    },
+    "safety": {
+      "title": "Safety and Responsibility",
+      "subtitle": "We are committed to responsible AI development, prioritizing safety and reliability."
+    },
+    "build": {
+      "title": "Build with Dongle",
+      "subtitle": "Leverage our powerful API and broad ecosystem to build next-generation applications."
+    }
+  },
+  "model": {
+    "availability": "General availability",
+    "viewSpecs": "View Specs",
+    "model1.title": "Dongle Pro",
+    "model1.description": "The high-performance multimodal model.",
+    "model2.title": "Dongle Flash",
+    "model2.description": "The low-latency, real-time processing model.",
+    "model3.title": "Dongle Lite",
+    "model3.description": "The lightweight model optimized for edge devices."
+  },
+  "handsOn": {
+    "promptLabel": "Prompt: ",
+    "dialogTitle": "Interact with the AI Model",
+    "description": "The platform provides a seamless conversation experience. Try asking a complex, multi-step question."
+  },
+  "performance": {
+    "feature": {
+      "0": {
+        "title": "Next-Level Reasoning",
+        "description": "Achieve state-of-the-art results across major industry benchmarks."
+      },
+      "1": {
+        "title": "Unmatched Speed",
+        "description": "Deliver results faster than ever, minimizing latency for real-time applications."
+      }
+    }
+  },
+  "table": {
+    "benchmark": "Benchmark",
+    "current": "Current",
+    "previousModel": "Previous Model",
+    "previous": "Previous",
+    "previousLabel": "Previous",
+    "competitorA": "???",
+    "competitorA_version": "5",
+    "competitorB": "???",
+    "competitorB_version": "2.5 Pro",
+    "competitorC": "DeepSea",
+    "competitorC_version": "r3",
+    "row": {
+      "0": {
+        "name": "MMLU (Reasoning)"
+      },
+      "1": {
+        "name": "HumanEval (Code)"
+      },
+      "2": {
+        "name": "ImageNet (Vision)"
+      }
+    }
+  },
+  "safety": {
+    "transparencyTitle": "Transparent and Trustworthy AI",
+    "description": "Safety is integrated into every step of development, from model training to deployment, ensuring responsible usage.",
+    "quote": "Our models are designed with ethical guidelines at their core, ensuring fair and reliable outcomes.",
+    "quoteAuthor": "Dr. Alpha Sigma, Head of Universe Research",
+    "learnMoreLink": "Learn more about our Safety Principles"
+  },
+  "responsibility": {
+    "calloutTitle": "Building responsibly in the agentic era",
+    "calloutDescription": "As we develop these new technologies, we recognize the responsibility it entails, and aim to prioritize safety and security in all our efforts."
+  },
+  "build": {
+    "forDevelopers": "For developers",
+    "title": "Dongle’s advanced thinking, native multimodality and massive context window empowers developers to build next-generation experiences.",
+    "apiTitle": "API & SDKs",
+    "apiDescription": "Access our models through intuitive APIs and SDKs for Python, Node.js, and more. Deploy globally with low latency.",
+    "ecosystemTitle": "Developer Ecosystem",
+    "ecosystemDescription": "Build with cutting-edge generative AI models and tools to make AI helpful for everyone.",
+    "aiStudio": "Dongle AI Labs",
+    "aiStudioDescription": "Build with the latest models from Dongle AI DeepMind",
+    "geminiApi": "Dongle API",
+    "geminiApiDescription": "Easily integrate Dongle AI’s most capable AI model to your apps"
+  },
+  "showcase": {
+    "title": "Explore Our Creations",
+    "promptLabel": "Prompt:"
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "description": "The page you're looking for doesn't exist or an other error occurred.",
+    "goHome": "Go to Home"
+  },
+  "home": {
+    "hero": {
+      "title": "Dongle AI: Pioneering the Future of Intelligence",
+      "subtitle": "At Dongle AI, we are dedicated to advancing artificial intelligence with a focus on safety, innovation, and human-centric design."
+    },
+    "product": {
+      "title": "Dongle 1.5",
+      "description": "Our latest flagship model, Dongle 1.5, offers unparalleled performance for complex tasks, creative generation, and efficient problem-solving.",
+      "announcement": "Discover Dongle 1.5",
+      "learnMore": "Learn more about our models"
+    },
+    "mission": {
+      "quote": "What drives the intelligence behind tomorrow's world?",
+      "paragraph1": "Dongle AI is committed to building intelligent systems that empower humanity and contribute to a safer, more prosperous future.",
+      "paragraph2": "We believe that the development of powerful AI must be guided by a deep sense of responsibility. Our approach balances ambitious technological progress with rigorous ethical considerations.",
+      "paragraph3": "Through continuous research, transparent policies, and user-focused product design, we strive to set the standard for responsible AI innovation."
+    },
+    "safetyViews": {
+      "title": "Our Commitment to AI Safety",
+      "link": "Explore our AI Safety principles"
+    },
+    "scalingPolicy": {
+      "title": "Dongle AI's Responsible Development Framework",
+      "link": "Understand our development guidelines"
+    },
+    "academy": {
+      "title": "Dongle AI Academy: Build with Intelligence",
+      "link": "Join the Dongle AI Academy"
+    }
+  },
+  "footer": {
+    "slogan": "Dongle AI for all humanity!",
+    "followUs": "Follow us",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "manageCookies": "Manage cookies",
+    "copyright": "All rights reserved.",
+    "models": {
+      "title": "Models",
+      "description": "Build with our next generation AI systems",
+      "dongle": "Dongle",
+      "round": "Round",
+      "abyss": "Abyss",
+      "submarine": "Submarine",
+      "universe": "Universe",
+      "round3": "Round 3",
+      "round2n": "Round 2n",
+      "shieldround1": "ShieldRound 1"
+    },
+    "science": {
+      "title": "Science",
+      "description": "Unlocking a new era of discovery with AI",
+      "alphasigma": "AlphaSigma",
+      "icyid": "IcyID",
+      "notalone": "NotAlone"
+    },
+    "learnMore": {
+      "title": "Learn more",
+      "about": "About",
+      "privacy": "Privacy",
+      "safety": "Safety",
+      "news": "News",
+      "careers": "Careers",
+      "research": "Research",
+      "responsibility": "Responsibility & Safety"
+    },
+    "signup": {
+      "title": "Sign up for updates on our latest innovations",
+      "disclaimer": "I accept Dongle AI's Terms and Conditions and acknowledge that my information will be used in accordance with Dongle AI's Privacy Policy.",
+      "emailPlaceholder": "Email address"
+    }
+  },
+  "header": {
+    "models": {
+      "title": "Build with our next generation AI systems",
+      "explore_link": "Explore models",
+      "gemini": {
+        "title": "Gemini",
+        "subtitle": "Our most intelligent AI models",
+        "items": {
+          "pro": "2.5 Pro",
+          "flash": "2.5 Flash",
+          "flash_image": "2.5 Flash Image",
+          "flash_lite": "2.5 Flash-Lite"
+        },
+        "learn_more": "Learn more"
+      },
+      "gemma": {
+        "title": "Gemma",
+        "subtitle": "Lightweight, state-of-the-art open models",
+        "items": {
+          "gemma3": "Gemma 3",
+          "gemma3n": "Gemma 3n",
+          "shieldgemma2": "ShieldGemma 2"
+        },
+        "learn_more": "Learn more"
+      },
+      "generative": {
+        "title": "Generative models",
+        "subtitle": "Image, music and video generation models",
+        "items": {
+          "imagen": "Imagen",
+          "lyria": "Lyria",
+          "veo": "Veo"
+        }
+      },
+      "ecosystem": {
+        "title": "Gemini model ecosystem",
+        "subtitle": "Models and experiments built with Gemini",
+        "items": {
+          "robotics": "Gemini Robotics",
+          "astra": "Project Astra",
+          "mariner": "Project Mariner",
+          "diffusion": "Gemini Diffusion"
+        }
+      }
+    },
+    "science": {
+      "title": "Unlocking a new era of discovery with AI",
+      "explore_link": "Explore science",
+      "biology": {
+        "title": "AI for biology",
+        "items": {
+          "alphafold": "AlphaFold",
+          "alphagenome": "AlphaGenome",
+          "alphamissense": "AlphaMissense",
+          "alphaproteo": "AlphaProteo"
+        }
+      },
+      "climate": {
+        "title": "AI for climate and sustainability",
+        "items": {
+          "weathernext": "WeatherNext",
+          "weatherlab": "Weather Lab"
+        }
+      },
+      "math_cs": {
+        "title": "AI for mathematics and computer science",
+        "items": {
+          "alphaevolve": "AlphaEvolve",
+          "alphaproof": "AlphaProof",
+          "alphageometry": "AlphaGeometry"
+        }
+      },
+      "physics_chem": {
+        "title": "AI for physics and chemistry",
+        "items": {
+          "gnome": "GNoME",
+          "fusion": "Fusion",
+          "alphaqubit": "AlphaQubit"
+        }
+      },
+      "transparency": {
+        "title": "AI transparency",
+        "items": {
+          "synthid": "SynthID"
+        }
+      }
+    },
+    "research": {
+      "title": "Our latest AI breakthroughs and updates from the lab",
+      "explore_link": "Explore research",
+      "projects": {
+        "title": "Projects",
+        "description": "Explore some of the biggest AI innovations",
+        "learn_more": "Learn more"
+      },
+      "publications": {
+        "title": "Publications",
+        "description": "Read a selection of our recent papers",
+        "learn_more": "Learn more"
+      },
+      "news": {
+        "title": "News",
+        "description": "Discover the latest updates from our lab",
+        "learn_more": "Learn more"
+      }
+    },
+    "about": {
+      "title": "Our mission is to build AI responsibly to benefit humanity",
+      "about_gdm": {
+        "title": "About Google DeepMind",
+        "learn_more": "Learn more"
+      },
+      "news": {
+        "title": "News",
+        "description": "Discover our latest AI breakthroughs, projects, and updates",
+        "learn_more": "Learn more"
+      },
+      "careers": {
+        "title": "Careers",
+        "description": "We’re looking for people who want to make a real, positive impact on the world",
+        "learn_more": "Learn more"
+      },
+      "milestones": {
+        "title": "Milestones",
+        "description": "For over 20 years, Google has worked to make AI helpful for everyone",
+        "learn_more": "Learn more"
+      },
+      "education": {
+        "title": "Education",
+        "description": "We work to make AI more accessible to the next generation",
+        "learn_more": "Learn more"
+      },
+      "responsibility": {
+        "title": "Responsibility",
+        "description": "Ensuring AI safety through proactive security, even against evolving threats",
+        "learn_more": "Learn more"
+      },
+      "podcast": {
+        "title": "The Podcast",
+        "description": "Uncover the extraordinary ways AI is transforming our world",
+        "learn_more": "Learn more"
+      }
+    }
+  },
+  "models_page": {
+    "title": "Our Models",
+    "description": "Explore the full range of our AI models."
+  },
+  "research_page": {
+    "title": "Our Research",
+    "description": "Dive deep into our cutting-edge AI research."
+  },
+  "science_page": {
+    "title": "Our Science Initiatives",
+    "description": "Discover our scientific breakthroughs and projects."
+  }

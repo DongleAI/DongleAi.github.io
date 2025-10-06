@@ -1,0 +1,19 @@
+{
+  "title": "AlphaSigma: 기초 모델",
+  "nav": {
+    "breakthrough": "돌파구",
+    "impact": "영향"
+  },
+  "hero": {
+    "title": "지능의 핵심 이해",
+    "tagline": "AlphaSigma는 AI 능력의 한계를 뛰어넘는 차세대 기초 모델입니다."
+  },
+  "breakthrough": {
+    "title": "일반 지능을 위한 새로운 아키텍처",
+    "content": "AlphaSigma는 텍스트, 이미지, 오디오 등 다양한 데이터 유형에 걸쳐 전례 없는 정확도로 더 효율적인 학습을 가능하게 하는 새로운 신경망 아키텍처를 도입합니다."
+  },
+  "impact": {
+    "title": "과학적 발견 가속화",
+    "content": "복잡한 과학 데이터를 이해함으로써 AlphaSigma는 의학, 재료 과학, 기후 변화와 같은 분야의 연구를 가속화할 준비가 되어 있습니다."
+  }
+}

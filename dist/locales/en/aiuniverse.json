@@ -1,0 +1,21 @@
+{
+  "productName": "Universe",
+  "hero": {
+    "title": "Universe Model",
+    "tagline": "Compose original music with our AI-powered generation engine",
+    "subtext": "Explore endless musical possibilities and create unique soundscapes."
+  },
+  "model": {
+    "v1": {
+      "title": "Universe v1",
+      "description": "The first version of the Universe music generation model."
+    }
+  },
+  "performance": {
+    "harmony": "Harmony"
+  },
+  "showcase": {
+    "prompt1": "An epic orchestral piece with soaring strings and powerful brass.",
+    "prompt2": "A calming ambient track with gentle piano melodies and atmospheric pads."
+  }
+}
