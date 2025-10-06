@@ -1,0 +1,19 @@
+{
+  "title": "IcyID: Secure Digital Identity",
+  "nav": {
+    "breakthrough": "Breakthrough",
+    "impact": "Impact"
+  },
+  "hero": {
+    "title": "Verifying Identity with AI",
+    "tagline": "IcyID provides robust and secure identity verification using advanced biometric and data analysis."
+  },
+  "breakthrough": {
+    "title": "Next-Generation Biometric Analysis",
+    "content": "IcyID utilizes a novel deep learning approach to analyze multiple biometric markers simultaneously, achieving over 99.9% accuracy in real-world conditions."
+  },
+  "impact": {
+    "title": "Enhancing Digital Security and Trust",
+    "content": "By providing a reliable and user-friendly verification system, IcyID is helping to secure online transactions, protect personal data, and build trust in the digital ecosystem."
+  }
+}
