@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 
-export default function AiBuild({ t, SectionTitle }) {
+export default function AiBuild({ t, SectionTitle }) { // why is SectionTitle Here???
     return (
         <section id="build" className="py-32">
             <div className="max-w-7xl mx-auto px-8">
