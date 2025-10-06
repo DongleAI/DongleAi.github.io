@@ -1,0 +1,26 @@
+{
+  "productName": "라운드",
+  "hero": {
+    "title": "라운드 모델",
+    "tagline": "효율적인 온디바이스 AI를 위한 경량 SLM",
+    "subtext": "작고 최적화된 패키지로 최첨단 성능을 경험하십시오."
+  },
+  "models": {
+    "round3": {
+      "title": "라운드 3",
+      "description": "라운드 모델의 세 번째 버전입니다."
+    },
+    "round2n": {
+      "title": "라운드 2n",
+      "description": "라운드 모델의 2n 버전입니다."
+    },
+    "shieldround1": {
+      "title": "쉴드라운드 1",
+      "description": "라운드 모델의 차폐 버전입니다."
+    }
+  },
+  "performance": {
+    "speed": "속도",
+    "accuracy": "정확성"
+  }
+}

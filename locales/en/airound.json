@@ -1,0 +1,26 @@
+{
+  "productName": "Round",
+  "hero": {
+    "title": "Round Model",
+    "tagline": "Our lightweight SLM for efficient on-device AI",
+    "subtext": "Experience cutting-edge performance in a compact and optimized package."
+  },
+  "models": {
+    "round3": {
+      "title": "Round 3",
+      "description": "The third iteration of the Round model."
+    },
+    "round2n": {
+      "title": "Round 2n",
+      "description": "The 2n version of the Round model."
+    },
+    "shieldround1": {
+      "title": "ShieldRound 1",
+      "description": "The shielded version of the Round model."
+    }
+  },
+  "performance": {
+    "speed": "Speed",
+    "accuracy": "Accuracy"
+  }
+}
