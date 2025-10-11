@@ -1,0 +1,98 @@
+import { motion } from 'framer-motion';
+
+const fadeInUp = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeInOut' } },
+};
+
+const Section = ({ title, paragraphs }) => (
+  <div className="mb-16">
+    <motion.h2
+      variants={fadeInUp}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      className="text-3xl md:text-4xl font-extrabold tracking-tight text-white mb-8"
+    >
+      {title}
+    </motion.h2>
+    <div className="prose prose-invert prose-lg max-w-none text-slate-300 space-y-6">
+      {paragraphs.map((p, index) => (
+        <motion.p
+          key={index}
+          variants={fadeInUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ delay: 0.1 * index }}
+        >
+          {p}
+        </motion.p>
+      ))}
+    </div>
+  </div>
+);
+
+export default function SafetyPage() {
+  const sections = [
+    {
+      title: "우리의 접근 방식",
+      paragraphs: [
+        "AI는 엄청난 이점을 제공할 수 있지만, 모든 혁신 기술과 마찬가지로 책임감 있게 개발 및 배포되지 않으면 부정적인 영향을 미칠 수 있습니다.",
+        "우리는 AI 원칙에 따라 AI 관련 위험의 광범위한 스펙트럼에 대해 시스템을 예측하고 평가하며, 책임, 안전 및 보안에 대한 전체적인 접근 방식을 취합니다. 우리의 접근 방식은 책임 있는 거버넌스, 연구 및 영향에 중점을 둡니다.",
+        "팀이 책임감 있게 개척하고 유해로부터 보호할 수 있도록, 최고 운영 책임자(COO)인 Lila Ibrahim과 책임 부사장(VP)인 Helen King이 공동 의장을 맡은 오랜 내부 검토 그룹인 책임 및 안전 위원회(RSC)는 Google DeepMind의 연구, 프로젝트 및 협업을 AI 원칙에 따라 평가하고, 가장 큰 영향을 미치는 작업에 대해 연구 및 제품 팀에 자문하고 협력합니다.",
+        "공동 창립자이자 최고 AGI 과학자인 Shane Legg가 이끄는 AGI 안전 위원회는 RSC와 긴밀히 협력하여 미래에 강력한 AGI 시스템에서 발생할 수 있는 극단적인 위험으로부터 우리의 프로세스, 시스템 및 연구를 보호합니다.",
+        "우리는 또한 산업 및 학계의 연구원들과 협력하여 AI의 돌파구를 마련하는 동시에, 단일 그룹만으로는 해결할 수 없는 과제를 해결하기 위해 정부 및 시민 사회와 협력하고 있습니다.",
+        "우리는 또한 기술 안전, 윤리, 거버넌스, 보안 및 대중 참여에 중점을 둔 세계적 수준의 팀을 보유하고 있으며, 이들은 AI 관련 위험 및 잠재적 완화에 대한 집단적 이해를 높이기 위해 노력합니다. 업계를 선도하는 우리의 최근 연구에는 AGI로 가는 길에 더 강력한 보안 프로토콜을 개발하고, 대규모 언어 모델의 사실성을 평가하기 위한 새로운 벤치마크를 만들고, 더 발전된 AI 비서가 있는 미래의 약속과 위험을 탐색하는 것이 포함됩니다. 우리는 또한 강력한 프론티어 AI 모델의 심각한 위험 가능성에 앞서 나가는 데 도움이 되는 프로토콜 세트인 프론티어 안전 프레임워크를 도입하고 계속 업데이트하고 있습니다.",
+        "우리의 학제간 팀은 AI 기회와 위험의 전체 스펙트럼을 이해하고, 최첨단 연구 및 모범 사례에 투자하고 우선 순위를 지정하여 AI 안전 분야 전체를 발전시키는 데 전념하고 있습니다.",
+      ],
+    },
+    {
+      title: "안전하고 개인 정보를 보호하는 AI",
+      paragraphs: [
+        "AI 기능이 확장됨에 따라 오용 가능성도 커집니다. Google DeepMind에서는 사용자 보안 및 개인 정보 보호의 중요성을 인식하고 있습니다. 예를 들어, 여기에는 모델이 배포될 때 오용 가능성을 제한하기 위한 완화 조치에 투자하고, 강화된 보안이 필요한 기능 임계값을 식별하는 데 도움이 되는 위협 모델링 연구가 포함됩니다.",
+        "AI가 더욱 주체적으로 변함에 따라 사용자를 보다 적극적이고 지속적으로 도울 수 있게 되며, 이는 사용자 데이터를 수집하고 오용할 위험을 초래합니다. 우리는 개인 정보 보호 인프라와 모델 모두에 투자하고, 이러한 기술을 Gemini 및 제품에 적용하기 위해 GDM의 나머지 부분과 협력하는 것을 목표로 합니다.",
+        "이러한 원칙을 우선시함으로써 우리는 사용자 보안, 개인 정보 보호 및 신뢰를 희생하지 않고 AI 기술의 고급 기능을 잠금 해제할 수 있는 AI 생태계를 조성하는 것을 목표로 합니다.",
+      ],
+    },
+    {
+      title: "모두에게 이익이 되는 AI",
+      paragraphs: [
+        "우리 팀은 많은 훌륭한 비영리 단체, 학계 및 기타 회사와 협력하여 AI를 적용하여 전 세계적인 과제의 기반이 되는 문제를 해결하는 동시에 위험을 사전에 완화합니다.",
+        "우리 기술의 오용을 방지하기 위해 2023년에는 프론티어 AI 모델의 안전하고 책임감 있는 개발을 보장하기 위해 산업 간 프론티어 모델 포럼을 설립했습니다.",
+        "우리는 다른 주요 연구소 및 학계, 자선 단체 및 회사 연구소를 모아 공통 과제를 해결하기 위해 공동 설립한 AI 파트너십과도 협력합니다.",
+        "우리는 AI가 더 큰 이익을 위해 배포될 수 있고 배포되어야 함을 보여줄 기회가 있다고 믿습니다. 우리는 AI 모델에 대한 공평한 접근과 채택을 가능하게 하여 이러한 개발이 우리 모두에게 힘을 실어주고 영향을 미치며 혜택을 줄 수 있도록 노력하고 있습니다.",
+        "예를 들어, 우리는 획기적인 모델인 AlphaFold 3에 대한 접근성을 넓히기 위해 AlphaFold 서버를 개발했으며, 커뮤니티의 모범 사례를 지원하기 위한 교육 자료를 함께 제공했습니다.",
+        "또한, 우리는 AMR과의 싸움에서 진전을 이끄는 것을 포함하여 주요 글로벌 문제와 싸우는 데 AI 사용을 촉진하기 위해 많은 훌륭한 파트너와 협력합니다.",
+        "그 외에도 우리는 아프리카 딥러닝 인다바와 같은 풀뿌리 노력을 지원하고, 장학금 및 펠로우십에 사용되는 자금을 제공하거나, 라즈베리 파이 재단과 협력하여 11~14세 어린이들에게 AI에 대해 교육하고 영감을 주기 위해 교사들을 교육하는 Experience AI를 시작하는 등 AI 교육에 대한 접근성을 넓히기 위해 노력합니다.",
+        "2023년 4월 Experience AI가 시작된 이래로 이 프로그램은 130개국의 교육자들이 이용했으며, Google.org의 1,000만 달러 지원으로 라즈베리 파이 재단은 이제 유럽, 중동 및 아프리카 전역의 2백만 명 이상의 젊은이들에게 Experience AI 프로그램을 제공하여 그들이 미래 지향적이고 책임감 있으며 안전한 AI 사용자가 될 수 있도록 하는 것을 목표로 합니다.",
+      ],
+    },
+  ];
+
+  return (
+    <div className="min-h-screen bg-slate-900 text-slate-100 font-sans">
+      <main className="max-w-4xl mx-auto px-6 py-24 sm:py-32">
+        {/* Hero Section */}
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={fadeInUp}
+          className="text-center mb-20"
+        >
+          <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-white">
+            책임 및 안전
+          </h1>
+          <p className="mt-6 text-xl md:text-2xl text-fuchsia-300 max-w-3xl mx-auto">
+            우리는 인류에게 이익이 되도록 책임감 있게 AI를 구축하고자 합니다.
+          </p>
+        </motion.div>
+
+        {/* Content Sections */}
+        {sections.map((section, index) => (
+          <Section key={index} title={section.title} paragraphs={section.paragraphs} />
+        ))}
+      </main>
+    </div>
+  );
+};

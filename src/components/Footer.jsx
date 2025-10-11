@@ -1,11 +1,23 @@
-// src/components/Footer.jsx
-
-import { useTranslation } from 'react-i18next';
 import { Youtube, Twitter, Instagram, Linkedin, Github, Sparkles, Dna, Fingerprint, Wind, ChevronRight } from 'lucide-react';
 import { useLocation } from 'react-router-dom';
 
-export default function Footer() {
-    const { t } = useTranslation();
+export default function Footer({
+    slogan,
+    modelsTitle,
+    modelsDescription,
+    modelLinks,
+    scienceTitle,
+    scienceDescription,
+    scienceLinks,
+    learnMoreTitle,
+    learnMoreLinks,
+    signupTitle,
+    signupEmailPlaceholder,
+    signupDisclaimer,
+    copyrightText,
+    privacyText,
+    termsText,
+}) {
     const location = useLocation();
     const hlParam = new URLSearchParams(location.search).get('hl');
 
@@ -23,41 +35,21 @@ export default function Footer() {
         { icon: <Github />, href: "#", label: "Github" },
     ];
 
-    const modelLinks = [
-        { icon: <Sparkles />, href: appendHl("/models/dongle"), label: t('footer.models.dongle') },
-        { icon: <Sparkles />, href: appendHl("/models/round"), label: t('footer.models.round') },
-        { icon: <Sparkles />, href: appendHl("/models/abyss"), label: t('footer.models.abyss') },
-        { icon: <Sparkles />, href: appendHl("/models/submarine"), label: t('footer.models.submarine') },
-        { icon: <Sparkles />, href: appendHl("/models/universe"), label: t('footer.models.universe') },
-    ];
-
-    const scienceLinks = [
-        { icon: <Dna />, href: appendHl("/science/alphasigma"), label: t('footer.science.alphasigma') },
-        { icon: <Fingerprint />, href: appendHl("/science/icyid"), label: t('footer.science.icyid') },
-        { icon: <Wind />, href: appendHl("/science/notalone"), label: t('footer.science.notalone') },
-    ];
-
-    const learnMoreLinks = [
-        { href: appendHl("/about"), label: t('footer.learnMore.about') },
-        { href: appendHl("/safety"), label: t('footer.learnMore.safety') },
-        { href: appendHl("/careers"), label: t('footer.learnMore.careers') },
-    ];
-
     return (
         <footer className="bg-slate-900 text-slate-400 border-t border-slate-800">
             <div className="max-w-7xl mx-auto px-8 py-16">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
                     <div className="col-span-1 md:col-span-2 lg:col-span-4 mb-8">
-                        <h3 className="text-2xl font-bold text-white">{t('footer.slogan')}</h3>
+                        <h3 className="text-2xl font-bold text-white">{slogan}</h3>
                     </div>
 
                     <div>
-                        <h4 className="font-semibold text-white">{t('footer.models.title')}</h4>
-                        <p className="text-sm mt-2">{t('footer.models.description')}</p>
+                        <h4 className="font-semibold text-white">{modelsTitle}</h4>
+                        <p className="text-sm mt-2">{modelsDescription}</p>
                         <ul className="mt-4 space-y-2">
                             {modelLinks.map(link => (
                                 <li key={link.label}>
-                                    <a href={link.href} className="flex items-center hover:text-white">
+                                    <a href={appendHl(link.href)} className="flex items-center hover:text-white">
                                         {link.icon && <span className="mr-2">{link.icon}</span>}
                                         {link.label}
                                     </a>
@@ -67,12 +59,12 @@ export default function Footer() {
                     </div>
 
                     <div>
-                        <h4 className="font-semibold text-white">{t('footer.science.title')}</h4>
-                        <p className="text-sm mt-2">{t('footer.science.description')}</p>
+                        <h4 className="font-semibold text-white">{scienceTitle}</h4>
+                        <p className="text-sm mt-2">{scienceDescription}</p>
                         <ul className="mt-4 space-y-2">
                             {scienceLinks.map(link => (
                                 <li key={link.label}>
-                                    <a href={link.href} className="flex items-center hover:text-white">
+                                    <a href={appendHl(link.href)} className="flex items-center hover:text-white">
                                         {link.icon && <span className="mr-2">{link.icon}</span>}
                                         {link.label}
                                     </a>
@@ -82,23 +74,23 @@ export default function Footer() {
                     </div>
 
                     <div>
-                        <h4 className="font-semibold text-white">{t('footer.learnMore.title')}</h4>
+                        <h4 className="font-semibold text-white">{learnMoreTitle}</h4>
                         <ul className="mt-4 space-y-2">
                             {learnMoreLinks.map(link => (
                                 <li key={link.label}>
-                                    <a href={link.href} className="hover:text-white">{link.label}</a>
+                                    <a href={appendHl(link.href)} className="hover:text-white">{link.label}</a>
                                 </li>
                             ))}
                         </ul>
                     </div>
 
                     <div className="col-span-1 md:col-span-2 lg:col-span-4 mt-8">
-                        <h4 className="font-semibold text-white">{t('footer.signup.title')}</h4>
+                        <h4 className="font-semibold text-white">{signupTitle}</h4>
                         <form className="mt-4 flex">
-                            <input type="email" placeholder={t('footer.signup.emailPlaceholder')} className="bg-slate-800 border border-slate-700 rounded-l-md p-3 w-full" />
+                            <input type="email" placeholder={signupEmailPlaceholder} className="bg-slate-800 border border-slate-700 rounded-l-md p-3 w-full" />
                             <button type="submit" className="bg-fuchsia-600 text-white p-3 rounded-r-md"><ChevronRight /></button>
                         </form>
-                        <p className="text-xs mt-2">{t('footer.signup.disclaimer')}</p>
+                        <p className="text-xs mt-2">{signupDisclaimer}</p>
                     </div>
                 </div>
 
@@ -111,10 +103,10 @@ export default function Footer() {
                         ))}
                     </div>
                     <div className="text-sm mt-4 md:mt-0">
-                        <p>&copy; {new Date().getFullYear()} {t('footer.copyright')}</p>
+                        <p>&copy; {new Date().getFullYear()} {copyrightText}</p>
                         <div className="flex space-x-4 mt-2">
-                            <a href={appendHl("/privacy")} className="hover:text-white">{t('footer.privacy')}</a>
-                            <a href={appendHl("/terms")} className="hover:text-white">{t('footer.terms')}</a>
+                            <a href={appendHl("/privacy")} className="hover:text-white">{privacyText}</a>
+                            <a href={appendHl("/terms")} className="hover:text-white">{termsText}</a>
                         </div>
                     </div>
                 </div>

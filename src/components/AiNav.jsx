@@ -1,7 +1,7 @@
 // src/components/AiNav.jsx
 import { motion } from "framer-motion";
 import React from "react";
-import { useTranslation } from "react-i18next";
+
 
 const fadeInUp = {
     hidden: { opacity: 0, y: 20 },
@@ -9,7 +9,7 @@ const fadeInUp = {
 };
 
 export default function AiNav({ items }) {
-    const { t } = useTranslation();
+    
     return (
         <nav className="max-w-7xl mx-auto px-8 py-4 -mt-16 relative z-20">
             <motion.div

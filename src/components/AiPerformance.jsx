@@ -1,7 +1,7 @@
 // src/components/AiPerformance.jsx
 
 import { motion } from "framer-motion";
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Legend, ResponsiveContainer, LabelList } from 'recharts';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Legend, ResponsiveContainer } from 'recharts';
 
 const fadeInUp = {
     hidden: { opacity: 0, y: 20 },
@@ -11,7 +11,7 @@ const fadeInUp = {
 /**
  * AI Performance 섹션 컴포넌트
  */
-export default function AiPerformance({ performanceTable, productName, t, SectionTitle }) {
+export default function AiPerformance({ performanceTable, productName, SectionTitle, title, subtitle, previousLabel }) {
     const chartData = performanceTable.map(row => ({
         name: row.metric,
         [productName]: parseFloat(row.value),
@@ -23,8 +23,8 @@ export default function AiPerformance({ performanceTable, productName, t, Sectio
     return (
         <section id="performance" className="max-w-7xl mx-auto px-8 py-32 bg-slate-900">
             <SectionTitle
-                titleKey="section.performance.title"
-                subTitleKey="section.performance.subtitle"
+                title={title}
+                subtitle={subtitle}
             />
 
             <motion.div
@@ -42,7 +42,7 @@ export default function AiPerformance({ performanceTable, productName, t, Sectio
                         <Bar dataKey={productName} fill="#a855f7" activeBar={false} />
                         <Bar dataKey="competitorA" fill="#64748b" activeBar={false} />
                         <Bar dataKey="competitorB" fill="#64748b" activeBar={false} />
-                        <Bar dataKey="previousValue" name={t('table.previousLabel')} fill="#475569" activeBar={false} />
+                        <Bar dataKey="previousValue" name={previousLabel} fill="#475569" activeBar={false} />
                     </BarChart>
                 </ResponsiveContainer>
             </motion.div>

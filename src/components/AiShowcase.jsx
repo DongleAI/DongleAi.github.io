@@ -1,14 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Play } from 'lucide-react';
-import { useTranslation } from 'react-i18next';
 
 const fadeInUp = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
 };
 
-export default function AiShowcase({ showcaseData, t }) {
+export default function AiShowcase({ showcaseData, title, promptLabel }) {
     return (
         <section id="showcase" className="max-w-7xl mx-auto px-8 py-24">
             <motion.h2
@@ -18,7 +17,7 @@ export default function AiShowcase({ showcaseData, t }) {
                 viewport={{ once: true }}
                 className="text-4xl font-extrabold tracking-tight text-white mb-12 text-center"
             >
-                {t('showcase.title')}
+                {title}
             </motion.h2>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -47,7 +46,7 @@ export default function AiShowcase({ showcaseData, t }) {
                             )}
                         </div>
                         <div className="p-6">
-                            <p className="text-sm text-fuchsia-400">{t('showcase.promptLabel')}</p>
+                            <p className="text-sm text-fuchsia-400">{promptLabel}</p>
                             <p className="text-white mt-2">{item.prompt}</p>
                         </div>
                     </motion.div>
